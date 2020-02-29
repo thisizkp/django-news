@@ -2,3 +2,5 @@
     <a href={% url 'article-detail' article.pk %}><h3>{{ article.title }}</h3></a>
     <p> - By {{ article.author }}</p>
 {% endfor %}
+
+<a href={% url 'article-new' %}>create</a>
