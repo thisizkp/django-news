@@ -3,3 +3,7 @@
 
 <a href={% url 'article-edit' object.pk %}>Edit</a>
 <a href={% url 'article-delete' object.pk %}>Delete</a>
+
+{% for comment in object.comments.all %}
+<p>{{ comment }}</p>
+{% endfor %}
